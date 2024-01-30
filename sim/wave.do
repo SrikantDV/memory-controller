@@ -38,10 +38,6 @@ add wave -noupdate -group memory_intf /top/mpif/mc_adsc_pad_o_
 add wave -noupdate -group memory_intf /top/mpif/mc_adv_pad_o_
 add wave -noupdate -group memory_intf /top/mpif/mc_zz_pad_o
 add wave -noupdate -group memory_intf /top/mpif/mc_coe_pad_coe_o
-add wave -noupdate -group power_intf /top/p_pif/susp_req_i
-add wave -noupdate -group power_intf /top/p_pif/resume_req_i
-add wave -noupdate -group power_intf /top/p_pif/suspended_o
-add wave -noupdate -group power_intf /top/p_pif/poc_o
 TreeUpdate [SetDefaultTree]
 WaveRestoreCursors {{Cursor 1} {1023650 ps} 0}
 quietly wave cursor active 1

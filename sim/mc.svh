@@ -20,7 +20,6 @@
 import uvm_pkg::*;
 `include "mc_common.sv"
 `include "wb_tx.sv"
-`include "power_intf.sv"
 `include "mem_intf.sv"
 `include "wb_interface.sv"
 

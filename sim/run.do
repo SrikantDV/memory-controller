@@ -1,9 +1,8 @@
-vlog mc.svh +incdir+D:/Srikanta_DV/DV_contents/uvm/MEMORY_CTLR/design-RTL/verilog \
+vlog mc.svh +incdir+D:/Srikanta_DV/DV_contents/uvm/MEMORY_CTLR/memory-controller/design-RTL/verilog \
 +incdir+D:/Srikanta_DV/DV_contents/uvm/uvm-1.2/src \
-+incdir+D:/Srikanta_DV/DV_contents/uvm/MEMORY_CTLR/mem_cont_uvc/top \
-+incdir+D:/Srikanta_DV/DV_contents/uvm/MEMORY_CTLR/mem_cont_uvc/wishbone \
-+incdir+D:/Srikanta_DV/DV_contents/uvm/MEMORY_CTLR/mem_cont_uvc/mem \
-+incdir+D:/Srikanta_DV/DV_contents/uvm/MEMORY_CTLR/mem_cont_uvc/power
++incdir+D:/Srikanta_DV/DV_contents/uvm/MEMORY_CTLR/memory-controller/mem_cont_uvc/top \
++incdir+D:/Srikanta_DV/DV_contents/uvm/MEMORY_CTLR/memory-controller/mem_cont_uvc/wishbone \
++incdir+D:/Srikanta_DV/DV_contents/uvm/MEMORY_CTLR/memory-controller/mem_cont_uvc/mem 
 
 set testname wb_wr_rd_test
 variable time [format "%s" [clock format [clock seconds] -format %Y%m%d_%H%M]]

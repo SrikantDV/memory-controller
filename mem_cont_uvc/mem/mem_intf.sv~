@@ -22,9 +22,4 @@ interface mem_intf(input bit mc_clk_i);
 	bit		mc_adv_pad_o_;
 	bit		mc_zz_pad_o;
 	bit		mc_coe_pad_coe_o;
-//power
-	bit		susp_req_i;
-	bit		resume_req_i;
-	bit		suspended_o;
-	bit	[31:0]	poc_o;
 endinterface

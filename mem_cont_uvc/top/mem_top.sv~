@@ -3,6 +3,7 @@ module top;
 	reg wb_rst;
 	wb_intf wpif(wb_clk,wb_rst);
 	mem_intf mpif(m_clk);
+	power_intf p_pif();
 	mc_common m_com = new();
 
 	initial begin
@@ -27,10 +28,10 @@ module top;
 				.wb_ack_o(wpif.wb_ack_o),
 				.wb_err_o(wpif.wb_err_o),
 
-				.susp_req_i(mpif.susp_req_i),
-				.resume_req_i(mpif.resume_req_i),
-				.suspended_o(mpif.suspended_o),
-				.poc_o(mpif.poc_o),
+				.susp_req_i(p_pif.susp_req_i),
+				.resume_req_i(p_pif.resume_req_i),
+				.suspended_o(p_pif.suspended_o),
+				.poc_o(p_pif.poc_o),
 
 				.mc_clk_i(m_clk),
 				.mc_br_pad_i(mpif.mc_br_pad_i),
